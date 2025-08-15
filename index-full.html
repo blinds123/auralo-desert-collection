@@ -3721,63 +3721,68 @@
         </section>
 
         <!-- STORY CAROUSEL SECTION -->
-        <!-- Story Carousel Section -->
-    <section class="carousel-section">
-        <h2 class="section-title">Why This Desert Road Set Exists</h2>
-        <p class="section-subtitle">A journey through luxury fashion</p>
-        
-        <!-- Carousel Navigation -->
-        <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 20px;">
-            <button id="storyPrevBtn" class="carousel-nav">‹</button>
-            <button id="storyNextBtn" class="carousel-nav">›</button>
-        </div>
-        
-        <div class="story-carousel" id="storyCarousel">
-            <div class="story-slides" id="storySlides">
-                <div class="story-slide active">
-                    <img src="./images/story/desert-road-1.jpg" alt="Desert road story slide 1">
-                </div>
-                <div class="story-slide">
-                    <img src="./images/story/desert-road-2.jpg" alt="Desert road story slide 2">
-                </div>
-                <div class="story-slide">
-                    <img src="./images/story/desert-road-3.jpg" alt="Desert road story slide 3">
-                </div>
-                <div class="story-slide">
-                    <img src="./images/story/desert-road-4.jpg" alt="Desert road story slide 4">
-                </div>
-                <div class="story-slide">
-                    <img src="./images/story/desert-road-5.jpg" alt="Desert road story slide 5">
-                </div>
-                <div class="story-slide">
-                    <img src="./images/story/desert-road-6.jpg" alt="Desert road story slide 6">
-                </div>
-                <div class="story-slide">
-                    <img src="./images/story/desert-road-7.jpg" alt="Desert road story slide 7">
-                </div>
-                <div class="story-slide">
-                    <img src="./images/story/desert-road-8.jpg" alt="Desert road story slide 8">
-                </div>
-                <div class="story-slide">
-                    <img src="./images/story/desert-road-9.jpg" alt="Desert road story slide 9">
-                </div>
-                <div class="story-slide">
-                    <img src="./images/story/desert-road-10.jpg" alt="Desert road story slide 10">
-                </div>
-                <div class="story-slide">
-                    <img src="./images/story/desert-road-11.jpg" alt="Desert road story slide 11">
-                </div>
-                <div class="story-slide">
-                    <img src="./images/story/desert-road-12.jpg" alt="Desert road story slide 12">
+        <section class="story-section">
+            <h2 class="section-title">Why This Desert Road Set Exists</h2>
+            <p class="section-subtitle">A new category of outfit that rewrites the rules</p>
+            <p style="text-align: center; color: var(--primary-gold); font-size: 14px; margin: 10px 0;">
+                <span style="display: inline-block; animation: slideHint 2s ease-in-out infinite;">← Swipe to explore →</span>
+            </p>
+            
+            <!-- Carousel Navigation -->
+            <div style="display: flex; justify-content: center; align-items: center; gap: 12px; padding: 10px; margin: 20px 0;">
+                <button id="storyPrevBtn" class="carousel-nav carousel-nav-left">‹</button>
+                <span id="slideIndicator" style="font-size: 14px; color: var(--text-light);">1 / 12</span>
+                <button id="storyNextBtn" class="carousel-nav carousel-nav-right">›</button>
+            </div>
+            
+            <div class="story-carousel" id="storyCarousel">
+                <div class="story-slides" id="storySlides" style="display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 20px 40px 20px 20px; scroll-behavior: smooth;">
+                    <!-- Slide 1: Hook -->
+                    <div class="story-slide" style="background: linear-gradient(135deg, #fcedeb, #fff7f2); padding: 40px 20px; border-radius: 20px;">
+                        <img src="./images/product/lava-pants-square.jpg" alt="Desert Road Set" style="max-width: 320px; border-radius: 16px; margin-bottom: 20px;">
+                        <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 16px;">Stop Scrolling—This Will Change Your Night</h3>
+                        <p style="font-size: 16px; line-height: 1.5; color: var(--text-dark);">This two-piece Desert Road set is rewriting the rules of chic. It's not denim, it's not another dress. It's everything you need to own the night.</p>
+                    </div>
+                    <!-- Slide 2: Future Pace -->
+                    <div class="story-slide" style="background: var(--bg-cream); padding: 40px 20px; border-radius: 20px;">
+                        <img src="./images/product/lava-top-square.jpg" alt="Imagine the attention" style="max-width: 320px; border-radius: 16px; margin-bottom: 20px;">
+                        <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 16px;">Imagine the Compliments</h3>
+                        <p style="font-size: 16px; line-height: 1.5; color: var(--text-dark);">Picture yourself wearing satin that drapes like liquid gold. Heads turn, compliments flow, you feel like you unlocked your own runway.</p>
+                    </div>
+                    <!-- Slide 3: Credibility -->
+                    <div class="story-slide" style="background: var(--light-beige); padding: 40px 20px; border-radius: 20px;">
+                        <img src="./images/product/lava-pants-main.jpg" alt="Quality and craft" style="max-width: 320px; border-radius: 16px; margin-bottom: 20px;">
+                        <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 16px;">Built on Trust & Craftsmanship</h3>
+                        <p style="font-size: 16px; line-height: 1.5; color: var(--text-dark);">After selling out thousands worldwide, each Desert Road set is hand-cut, sewn per order, and ethically produced.</p>
+                    </div>
+                    <!-- Slide 4: New Category -->
+                    <div class="story-slide" style="background: var(--secondary-sand); padding: 40px 20px; border-radius: 20px;">
+                        <img src="./images/product/lava-top-main.jpg" alt="Two piece set" style="max-width: 320px; border-radius: 16px; margin-bottom: 20px;">
+                        <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 16px; color: white;">A New Category of Outfit</h3>
+                        <p style="font-size: 16px; line-height: 1.5; color: white;">Most outfits make you choose between comfort and glamour. This moves like silk and wears like pajamas.</p>
+                    </div>
+                    <!-- Slide 5: Secret 1 -->
+                    <div class="story-slide" style="background: linear-gradient(135deg, #e7e7ff, #f5f5ff); padding: 40px 20px; border-radius: 20px;">
+                        <img src="./images/product/lava-pants-square.jpg" alt="Luxe fabric" style="max-width: 320px; border-radius: 16px; margin-bottom: 20px;">
+                        <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 16px;">Secret #1: Luxe Fabric</h3>
+                        <p style="font-size: 16px; line-height: 1.5; color: var(--text-dark);">Our satin blend drapes like high couture yet breathes like your favourite tee. Luxury that fits your lifestyle.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- Carousel Indicators -->
-        <div class="carousel-indicators" id="storyIndicators"></div>
-    </section>
-    
-    
+            
+            <div style="text-align: center; margin-top: 32px;">
+                <button class="buy-now-button primary" onclick="addToCart('order-now', 99)">
+                    <!-- ADAPTABLE: Price Points -->
+                    <span class="button-price">ADD TO CART - <del style="opacity: 0.6;">€1,140</del> $49</span>
+                    <span class="button-subtext">In-Stock: Ready to Ship</span>
+                </button>
+                <button class="buy-now-button secondary" onclick="addToCart('pre-order', 19)" style="margin-top: 12px;">
+                    <!-- ADAPTABLE: Pre-order Price Points -->
+                    <span class="button-price">ADD PRE-ORDER TO CART - <del style="opacity: 0.6;">€1,140</del> $19</span>
+                    <span class="button-subtext">Wait & Save: Estimated to Ship Oct 23</span>
+                </button>
+            </div>
+        </section>
 
         <!-- LIFESTYLE MOMENTS SECTION -->
         <section class="wardrobe-tour-section">
