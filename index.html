@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- AURALO DESERT COLLECTION - COMBINED VERSION -->
+    <!-- Merging auralo-collection copy with auralo-lava-set carousel functionality -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Desert Road Set - €1,140 for $29 | Limited Collection</title>
+    
+    <!-- Preload key assets -->
+    <link rel="preload" href="./images/story/desert-road-1.jpg" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Desert Collection Color Palette */
+        :root {
+            --primary-gold: #d4a574;
+            --secondary-sand: #c9a876;
+            --accent-bronze: #8b7355;
+            --light-beige: #f5e6d3;
+            --dark-brown: #3d3426;
+            --text-dark: #2c2416;
+            --text-light: #666;
+            --bg-cream: #faf8f5;
+            --bg-white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Space Mono', monospace;
+            color: var(--text-dark);
+            background: var(--bg-cream);
+            overflow-x: hidden;
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-sand));
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .price-badge {
+            background: #ff0000;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            display: inline-block;
+            font-weight: 700;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+        }
+        
+        .stock-warning {
+            background: rgba(255,255,255,0.2);
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        /* Product Section */
+        .product-section {
+            padding: 40px 20px;
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -20px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .product-image {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto 30px;
+            display: block;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        /* Size Selector */
+        .size-selector {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .size-label {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .size-options {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .size-btn {
+            width: 50px;
+            height: 50px;
+            border: 2px solid var(--accent-bronze);
+            background: white;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .size-btn:hover, .size-btn.active {
+            background: var(--primary-gold);
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        /* CTA Buttons */
+        .cta-button {
+            width: 100%;
+            padding: 20px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-primary {
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-sand));
+            color: white;
+            box-shadow: 0 5px 15px rgba(212, 165, 116, 0.4);
+        }
+        
+        .cta-secondary {
+            background: white;
+            color: var(--primary-gold);
+            border: 2px solid var(--primary-gold);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(212, 165, 116, 0.5);
+        }
+        
+        /* Carousel Styles */
+        .carousel-section {
+            padding: 40px 20px;
+            background: var(--bg-cream);
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+        
+        .story-carousel, .review-carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .story-slides {
+            display: block;
+            position: relative;
+        }
+        
+        .story-slide {
+            display: none;
+            width: 100%;
+        }
+        
+        .story-slide.active {
+            display: block;
+        }
+        
+        .story-slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Navigation Buttons */
+        .carousel-nav {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.9);
+            border: 2px solid var(--primary-gold);
+            color: var(--primary-gold);
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 0 5px;
+        }
+        
+        .carousel-nav:hover {
+            background: var(--primary-gold);
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        /* Indicators */
+        .carousel-indicators {
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .indicator-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ddd;
+            display: inline-block;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .indicator-dot.active {
+            background: var(--primary-gold);
+            transform: scale(1.3);
+        }
+        
+        /* Trust Badges */
+        .trust-section {
+            padding: 40px 20px;
+            background: white;
+            text-align: center;
+        }
+        
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .trust-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .trust-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--light-beige);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        
+        /* Guarantee Section */
+        .guarantee-section {
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--light-beige), white);
+            text-align: center;
+        }
+        
+        .guarantee-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .guarantee-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--primary-gold);
+        }
+        
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .cta-button {
+                font-size: 1.1rem;
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section with Aggressive Pricing -->
+    <section class="hero-section">
+        <div class="price-badge">97% OFF - TODAY ONLY</div>
+        <h1 class="hero-title">€1,140 Designer Set Now $29</h1>
+        <p class="hero-subtitle">Save €1,111 on the Desert Road Collection</p>
+        <div class="stock-warning">⚡ Only 47 Sets Remaining</div>
+    </section>
+    
+    <!-- Main Product Section -->
+    <section class="product-section">
+        <img src="./images/product/lava-pants-main.jpg" alt="Desert Road Set" class="product-image">
+        
+        <h2 style="font-size: 1.8rem; margin-bottom: 15px; text-align: center;">The Desert Road Set</h2>
+        <p style="text-align: center; color: var(--text-light); margin-bottom: 30px;">
+            Only 1% know about this exclusive two-piece set
+        </p>
+        
+        <!-- Size Selection -->
+        <div class="size-selector">
+            <label class="size-label">Select Your Size:</label>
+            <div class="size-options">
+                <button class="size-btn" data-size="XS">XS</button>
+                <button class="size-btn" data-size="S">S</button>
+                <button class="size-btn active" data-size="M">M</button>
+                <button class="size-btn" data-size="L">L</button>
+                <button class="size-btn" data-size="XL">XL</button>
+                <button class="size-btn" data-size="XXL">XXL</button>
+            </div>
+        </div>
+        
+        <!-- CTA Buttons -->
+        <button class="cta-button cta-primary" onclick="addToCart()">
+            GET MY SET → $29
+        </button>
+        <button class="cta-button cta-secondary" onclick="preOrder()">
+            PRE-ORDER & SAVE → $19
+        </button>
+    </section>
+    
+    <!-- Story Carousel Section -->
+    <section class="carousel-section">
+        <h2 class="section-title">Why This Desert Road Set Exists</h2>
+        <p class="section-subtitle">A journey through luxury fashion</p>
+        
+        <!-- Carousel Navigation -->
+        <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 20px;">
+            <button id="storyPrevBtn" class="carousel-nav">‹</button>
+            <button id="storyNextBtn" class="carousel-nav">›</button>
+        </div>
+        
+        <div class="story-carousel" id="storyCarousel">
+            <div class="story-slides" id="storySlides">
+                <div class="story-slide active">
+                    <img src="./images/story/desert-road-1.jpg" alt="Desert road story slide 1">
+                </div>
+                <div class="story-slide">
+                    <img src="./images/story/desert-road-2.jpg" alt="Desert road story slide 2">
+                </div>
+                <div class="story-slide">
+                    <img src="./images/story/desert-road-3.jpg" alt="Desert road story slide 3">
+                </div>
+                <div class="story-slide">
+                    <img src="./images/story/desert-road-4.jpg" alt="Desert road story slide 4">
+                </div>
+                <div class="story-slide">
+                    <img src="./images/story/desert-road-5.jpg" alt="Desert road story slide 5">
+                </div>
+                <div class="story-slide">
+                    <img src="./images/story/desert-road-6.jpg" alt="Desert road story slide 6">
+                </div>
+                <div class="story-slide">
+                    <img src="./images/story/desert-road-7.jpg" alt="Desert road story slide 7">
+                </div>
+                <div class="story-slide">
+                    <img src="./images/story/desert-road-8.jpg" alt="Desert road story slide 8">
+                </div>
+                <div class="story-slide">
+                    <img src="./images/story/desert-road-9.jpg" alt="Desert road story slide 9">
+                </div>
+                <div class="story-slide">
+                    <img src="./images/story/desert-road-10.jpg" alt="Desert road story slide 10">
+                </div>
+                <div class="story-slide">
+                    <img src="./images/story/desert-road-11.jpg" alt="Desert road story slide 11">
+                </div>
+                <div class="story-slide">
+                    <img src="./images/story/desert-road-12.jpg" alt="Desert road story slide 12">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators" id="storyIndicators"></div>
+    </section>
+    
+    <!-- TikTok Reviews Section -->
+    <section class="carousel-section" style="background: white;">
+        <h2 class="section-title">What TikTok Is Saying</h2>
+        <p class="section-subtitle">Real reviews from verified buyers</p>
+        
+        <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 20px;">
+            <button id="tiktokPrevBtn" class="carousel-nav">‹</button>
+            <button id="tiktokNextBtn" class="carousel-nav">›</button>
+        </div>
+        
+        <div class="review-carousel" id="tiktokCarousel" style="height: 600px;">
+            <div class="story-slides" id="tiktokSlides">
+                <div class="story-slide tiktok-slide active">
+                    <img src="./images/testimonials/svg/tiktok-review-1.svg" alt="TikTok review 1">
+                </div>
+                <div class="story-slide tiktok-slide">
+                    <img src="./images/testimonials/svg/tiktok-review-2.svg" alt="TikTok review 2">
+                </div>
+                <div class="story-slide tiktok-slide">
+                    <img src="./images/testimonials/svg/tiktok-review-3.svg" alt="TikTok review 3">
+                </div>
+                <div class="story-slide tiktok-slide">
+                    <img src="./images/testimonials/svg/tiktok-review-4.svg" alt="TikTok review 4">
+                </div>
+                <div class="story-slide tiktok-slide">
+                    <img src="./images/testimonials/svg/tiktok-review-5.svg" alt="TikTok review 5">
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel-indicators" id="tiktokIndicators"></div>
+    </section>
+    
+    <!-- Trustpilot Reviews Section -->
+    <section class="carousel-section">
+        <h2 class="section-title">Trustpilot Reviews</h2>
+        <p class="section-subtitle">5-star verified customer feedback</p>
+        
+        <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 20px;">
+            <button id="trustpilotPrevBtn" class="carousel-nav">‹</button>
+            <button id="trustpilotNextBtn" class="carousel-nav">›</button>
+        </div>
+        
+        <div class="review-carousel" id="trustpilotCarousel" style="height: 350px;">
+            <div class="story-slides" id="trustpilotSlides">
+                <div class="story-slide trustpilot-slide active">
+                    <img src="./images/testimonials/svg/trustpilot-review-1.svg" alt="Trustpilot review 1">
+                </div>
+                <div class="story-slide trustpilot-slide">
+                    <img src="./images/testimonials/svg/trustpilot-review-2.svg" alt="Trustpilot review 2">
+                </div>
+                <div class="story-slide trustpilot-slide">
+                    <img src="./images/testimonials/svg/trustpilot-review-3.svg" alt="Trustpilot review 3">
+                </div>
+                <div class="story-slide trustpilot-slide">
+                    <img src="./images/testimonials/svg/trustpilot-review-4.svg" alt="Trustpilot review 4">
+                </div>
+                <div class="story-slide trustpilot-slide">
+                    <img src="./images/testimonials/svg/trustpilot-review-5.svg" alt="Trustpilot review 5">
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel-indicators" id="trustpilotIndicators"></div>
+    </section>
+    
+    <!-- Trust & Guarantee Section -->
+    <section class="trust-section">
+        <h2 class="section-title">Why 47,000+ Trust Auralo</h2>
+        <div class="trust-badges">
+            <div class="trust-badge">
+                <div class="trust-icon">🌳</div>
+                <span>5 Trees Planted<br>Per Order</span>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-icon">✓</div>
+                <span>30-Day<br>Guarantee</span>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-icon">🚚</div>
+                <span>Free Worldwide<br>Shipping</span>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-icon">🔒</div>
+                <span>Secure<br>Checkout</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final CTA Section -->
+    <section class="guarantee-section">
+        <div class="guarantee-box">
+            <h3 class="guarantee-title">Our Promise To You</h3>
+            <p style="margin-bottom: 20px;">
+                If you don't absolutely love your Desert Road Set, we'll give you a full refund. 
+                No questions asked. That's how confident we are.
+            </p>
+            <button class="cta-button cta-primary" onclick="addToCart()">
+                CLAIM MY SET NOW → $29
+            </button>
+            <p style="margin-top: 15px; color: var(--text-light); font-size: 0.9rem;">
+                ⚡ Only 47 sets left at this price
+            </p>
+        </div>
+    </section>
+    
+    <!-- JavaScript for Carousel Functionality -->
+    <script>
+        // Initialize all carousels with one-at-a-time navigation
+        (function() {
+            console.log('Initializing Desert Collection Carousels...');
+            
+            // Desert Road Story Carousel
+            function initializeDesertRoadCarousel() {
+                const slidesContainer = document.getElementById('storySlides');
+                const prevBtn = document.getElementById('storyPrevBtn');
+                const nextBtn = document.getElementById('storyNextBtn');
+                
+                if (!slidesContainer || !prevBtn || !nextBtn) return;
+                
+                const slides = slidesContainer.querySelectorAll('.story-slide');
+                let currentSlide = 0;
+                
+                function showSlide(index) {
+                    slides.forEach(slide => {
+                        slide.style.display = 'none';
+                        slide.classList.remove('active');
+                    });
+                    
+                    if (slides[index]) {
+                        slides[index].style.display = 'block';
+                        slides[index].classList.add('active');
+                    }
+                    
+                    const indicators = document.querySelectorAll('#storyIndicators .indicator-dot');
+                    indicators.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === index);
+                    });
+                }
+                
+                showSlide(0);
+                
+                nextBtn.onclick = function(e) {
+                    e.preventDefault();
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    showSlide(currentSlide);
+                };
+                
+                prevBtn.onclick = function(e) {
+                    e.preventDefault();
+                    currentSlide = currentSlide > 0 ? currentSlide - 1 : slides.length - 1;
+                    showSlide(currentSlide);
+                };
+                
+                const indicatorsContainer = document.getElementById('storyIndicators');
+                if (indicatorsContainer) {
+                    indicatorsContainer.innerHTML = '';
+                    for (let i = 0; i < slides.length; i++) {
+                        const dot = document.createElement('span');
+                        dot.className = 'indicator-dot' + (i === 0 ? ' active' : '');
+                        dot.style.cursor = 'pointer';
+                        dot.onclick = function() {
+                            currentSlide = i;
+                            showSlide(currentSlide);
+                        };
+                        indicatorsContainer.appendChild(dot);
+                    }
+                }
+                
+                console.log('✅ Desert Road Carousel initialized!');
+            }
+            
+            // TikTok Reviews Carousel
+            function initializeTikTokCarousel() {
+                const slidesContainer = document.getElementById('tiktokSlides');
+                const prevBtn = document.getElementById('tiktokPrevBtn');
+                const nextBtn = document.getElementById('tiktokNextBtn');
+                
+                if (!slidesContainer || !prevBtn || !nextBtn) return;
+                
+                const slides = slidesContainer.querySelectorAll('.tiktok-slide');
+                let currentSlide = 0;
+                
+                function showSlide(index) {
+                    slides.forEach(slide => {
+                        slide.style.display = 'none';
+                        slide.classList.remove('active');
+                    });
+                    
+                    if (slides[index]) {
+                        slides[index].style.display = 'block';
+                        slides[index].classList.add('active');
+                    }
+                    
+                    const indicators = document.querySelectorAll('#tiktokIndicators .indicator-dot');
+                    indicators.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === index);
+                    });
+                }
+                
+                showSlide(0);
+                
+                nextBtn.onclick = function(e) {
+                    e.preventDefault();
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    showSlide(currentSlide);
+                };
+                
+                prevBtn.onclick = function(e) {
+                    e.preventDefault();
+                    currentSlide = currentSlide > 0 ? currentSlide - 1 : slides.length - 1;
+                    showSlide(currentSlide);
+                };
+                
+                const indicatorsContainer = document.getElementById('tiktokIndicators');
+                if (indicatorsContainer) {
+                    indicatorsContainer.innerHTML = '';
+                    for (let i = 0; i < slides.length; i++) {
+                        const dot = document.createElement('span');
+                        dot.className = 'indicator-dot' + (i === 0 ? ' active' : '');
+                        dot.style.cursor = 'pointer';
+                        dot.onclick = function() {
+                            currentSlide = i;
+                            showSlide(currentSlide);
+                        };
+                        indicatorsContainer.appendChild(dot);
+                    }
+                }
+                
+                console.log('✅ TikTok Carousel initialized!');
+            }
+            
+            // Trustpilot Reviews Carousel
+            function initializeTrustpilotCarousel() {
+                const slidesContainer = document.getElementById('trustpilotSlides');
+                const prevBtn = document.getElementById('trustpilotPrevBtn');
+                const nextBtn = document.getElementById('trustpilotNextBtn');
+                
+                if (!slidesContainer || !prevBtn || !nextBtn) return;
+                
+                const slides = slidesContainer.querySelectorAll('.trustpilot-slide');
+                let currentSlide = 0;
+                
+                function showSlide(index) {
+                    slides.forEach(slide => {
+                        slide.style.display = 'none';
+                        slide.classList.remove('active');
+                    });
+                    
+                    if (slides[index]) {
+                        slides[index].style.display = 'block';
+                        slides[index].classList.add('active');
+                    }
+                    
+                    const indicators = document.querySelectorAll('#trustpilotIndicators .indicator-dot');
+                    indicators.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === index);
+                    });
+                }
+                
+                showSlide(0);
+                
+                nextBtn.onclick = function(e) {
+                    e.preventDefault();
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    showSlide(currentSlide);
+                };
+                
+                prevBtn.onclick = function(e) {
+                    e.preventDefault();
+                    currentSlide = currentSlide > 0 ? currentSlide - 1 : slides.length - 1;
+                    showSlide(currentSlide);
+                };
+                
+                const indicatorsContainer = document.getElementById('trustpilotIndicators');
+                if (indicatorsContainer) {
+                    indicatorsContainer.innerHTML = '';
+                    for (let i = 0; i < slides.length; i++) {
+                        const dot = document.createElement('span');
+                        dot.className = 'indicator-dot' + (i === 0 ? ' active' : '');
+                        dot.style.cursor = 'pointer';
+                        dot.onclick = function() {
+                            currentSlide = i;
+                            showSlide(currentSlide);
+                        };
+                        indicatorsContainer.appendChild(dot);
+                    }
+                }
+                
+                console.log('✅ Trustpilot Carousel initialized!');
+            }
+            
+            // Initialize all carousels
+            initializeDesertRoadCarousel();
+            initializeTikTokCarousel();
+            initializeTrustpilotCarousel();
+        })();
+        
+        // Size selection functionality
+        document.querySelectorAll('.size-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // Cart functionality
+        function addToCart() {
+            alert('Adding Desert Road Set to cart - $29');
+            // Add actual cart logic here
+        }
+        
+        function preOrder() {
+            alert('Pre-ordering Desert Road Set - $19');
+            // Add actual pre-order logic here
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<svg width="400" height="600" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- TikTok Style Background -->
+  <rect width="400" height="600" fill="#000000"/>
+  
+  <!-- Profile Section -->
+  <g id="profile">
+    <circle cx="50" cy="50" r="20" fill="#FF0050"/>
+    <text x="80" y="45" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">@fit_check_daily</text>
+    <text x="80" y="62" fill="#888" font-family="Arial, sans-serif" font-size="12">3 days ago</text>
+  </g>
+  
+  <!-- Video Preview Background -->
+  <rect x="20" y="90" width="360" height="300" rx="10" fill="#1a1a1a"/>
+  <text x="200" y="240" fill="white" font-family="Arial, sans-serif" font-size="60" text-anchor="middle" opacity="0.3">▶</text>
+  
+  <!-- Review Text -->
+  <text x="30" y="420" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    "Run don't walk! 🏃‍♀️💨"
+  </text>
+  <text x="30" y="445" fill="#ddd" font-family="Arial, sans-serif" font-size="14">
+    Best loungewear purchase EVER!
+  </text>
+  <text x="30" y="465" fill="#ddd" font-family="Arial, sans-serif" font-size="14">
+    So comfy I ordered 3 more colors.
+  </text>
+  <text x="30" y="485" fill="#ddd" font-family="Arial, sans-serif" font-size="14">
+    My boyfriend keeps stealing mine 😂
+  </text>
+  
+  <!-- Engagement Stats -->
+  <g id="stats">
+    <text x="30" y="530" fill="#FF0050" font-family="Arial, sans-serif" font-size="14">❤️ 15.2K</text>
+    <text x="100" y="530" fill="#888" font-family="Arial, sans-serif" font-size="14">💬 567</text>
+    <text x="160" y="530" fill="#888" font-family="Arial, sans-serif" font-size="14">↗️ 203</text>
+  </g>
+  
+  <!-- Rating Stars -->
+  <g id="rating" transform="translate(30, 550)">
+    <text fill="#FFD700" font-size="20">★★★★★</text>
+    <text x="110" y="5" fill="#888" font-family="Arial, sans-serif" font-size="12">Verified Purchase</text>
+  </g>
+</svg>

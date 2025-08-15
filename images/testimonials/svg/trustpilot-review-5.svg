@@ -1,0 +1,46 @@
+<svg width="600" height="350" viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Trustpilot Style Background -->
+  <rect width="600" height="350" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1" rx="8"/>
+  
+  <!-- Trustpilot Logo/Header -->
+  <rect x="0" y="0" width="600" height="60" fill="#00B67A" rx="8 8 0 0"/>
+  <text x="30" y="38" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Trustpilot Review</text>
+  
+  <!-- Star Rating -->
+  <g id="stars" transform="translate(30, 80)">
+    <text fill="#00B67A" font-size="28">★★★★★</text>
+    <text x="160" y="8" fill="#333" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Excellent</text>
+  </g>
+  
+  <!-- Review Title -->
+  <text x="30" y="130" fill="#191919" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+    My New Favorite Brand - Obsessed!
+  </text>
+  
+  <!-- Review Content -->
+  <text x="30" y="160" fill="#555" font-family="Arial, sans-serif" font-size="14">
+    I discovered Auralo through a friend and I'm so glad I did! This Lava Set
+  </text>
+  <text x="30" y="180" fill="#555" font-family="Arial, sans-serif" font-size="14">
+    is now my everyday uniform. The quality rivals luxury brands at a fraction
+  </text>
+  <text x="30" y="200" fill="#555" font-family="Arial, sans-serif" font-size="14">
+    of the price. It's held up beautifully through multiple washes, and I get
+  </text>
+  <text x="30" y="220" fill="#555" font-family="Arial, sans-serif" font-size="14">
+    compliments every time I wear it. Already planning my next purchase!
+  </text>
+  
+  <!-- Reviewer Info -->
+  <g id="reviewer" transform="translate(30, 260)">
+    <circle cx="20" cy="20" r="20" fill="#E5E5E5"/>
+    <text x="20" y="25" fill="#666" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">JR</text>
+    <text x="55" y="18" fill="#333" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Jessica Rodriguez</text>
+    <text x="55" y="35" fill="#888" font-family="Arial, sans-serif" font-size="12">Verified Buyer • 4 days ago</text>
+  </g>
+  
+  <!-- Helpful Stats -->
+  <g id="helpful" transform="translate(450, 290)">
+    <text fill="#666" font-family="Arial, sans-serif" font-size="12">👍 103 found this helpful</text>
+  </g>
+</svg>

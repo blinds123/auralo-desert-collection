@@ -1,0 +1,49 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="250" fill="#ffffff"/>
+  
+  <!-- Trustpilot Style Header -->
+  <rect x="0" y="0" width="400" height="50" fill="#00b67a"/>
+  <text x="20" y="32" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">Trustpilot</text>
+  
+  <!-- Trustpilot Stars -->
+  <g transform="translate(280, 15)">
+    <rect x="0" y="0" width="100" height="20" fill="#00b67a"/>
+    <g transform="scale(0.8)">
+      <path d="M15 0 L18 9 L27 9 L20 15 L23 24 L15 18 L7 24 L10 15 L3 9 L12 9 Z" fill="#ffffff"/>
+      <path d="M40 0 L43 9 L52 9 L45 15 L48 24 L40 18 L32 24 L35 15 L28 9 L37 9 Z" fill="#ffffff"/>
+      <path d="M65 0 L68 9 L77 9 L70 15 L73 24 L65 18 L57 24 L60 15 L53 9 L62 9 Z" fill="#ffffff"/>
+      <path d="M90 0 L93 9 L102 9 L95 15 L98 24 L90 18 L82 24 L85 15 L78 9 L87 9 Z" fill="#ffffff"/>
+      <path d="M115 0 L118 9 L127 9 L120 15 L123 24 L115 18 L107 24 L110 15 L103 9 L112 9 Z" fill="#ffffff"/>
+    </g>
+  </g>
+  
+  <!-- Review Card -->
+  <rect x="20" y="70" width="360" height="150" rx="8" fill="#f7f7f7" stroke="#e0e0e0"/>
+  
+  <!-- Reviewer Info -->
+  <text x="40" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#191919">Morgan Davis</text>
+  <text x="40" y="112" font-family="Arial, sans-serif" font-size="11" fill="#666666">Verified Buyer</text>
+  
+  <!-- Review Rating -->
+  <g transform="translate(40, 120)">
+    <rect x="0" y="0" width="100" height="20" fill="#00b67a"/>
+    <g transform="scale(0.6)">
+      <path d="M10 0 L12 6 L18 6 L13 10 L15 16 L10 12 L5 16 L7 10 L2 6 L8 6 Z" fill="#ffffff"/>
+      <path d="M30 0 L32 6 L38 6 L33 10 L35 16 L30 12 L25 16 L27 10 L22 6 L28 6 Z" fill="#ffffff"/>
+      <path d="M50 0 L52 6 L58 6 L53 10 L55 16 L50 12 L45 16 L47 10 L42 6 L48 6 Z" fill="#ffffff"/>
+      <path d="M70 0 L72 6 L78 6 L73 10 L75 16 L70 12 L65 16 L67 10 L62 6 L68 6 Z" fill="#ffffff"/>
+      <path d="M90 0 L92 6 L98 6 L93 10 L95 16 L90 12 L85 16 L87 10 L82 6 L88 6 Z" fill="#ffffff"/>
+    </g>
+  </g>
+  
+  <!-- Review Text -->
+  <text x="40" y="155" font-family="Arial, sans-serif" font-size="13" fill="#191919">
+    <tspan x="40" dy="0">"Amazing quality and style! I've washed</tspan>
+    <tspan x="40" dy="18">them multiple times and they still look</tspan>
+    <tspan x="40" dy="18">brand new. Best athleisure purchase!"</tspan>
+  </text>
+  
+  <!-- Date -->
+  <text x="40" y="205" font-family="Arial, sans-serif" font-size="10" fill="#999999">2 weeks ago</text>
+  <text x="320" y="205" font-family="Arial, sans-serif" font-size="10" fill="#00b67a">✓ Verified</text>
+</svg>
